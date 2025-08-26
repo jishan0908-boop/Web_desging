@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CSE Weekly Timetable</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1100px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    background: white;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  th {
+    background-color: #003366;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  td:first-child, th:first-child {
+    background-color: #003366;
+    color: white;
+    position: sticky;
+    left: 0;
+    z-index: 3;
+  }
+  /* New color coding for subjects */
+  .ds   { background-color: #a0d8f1; } /* Data Structures */
+  .os   { background-color: #f9844a; color:white;} /* Operating Systems */
+  .web  { background-color: #90be6d; } /* Web Designing */
+  .py   { background-color: #f9c74f; } /* Computing Using Python */
+  .de   { background-color: #f94144; color:white; } /* Differential Equation */
+  .vm   { background-color: #d2b4de; } /* Vedic Maths */
+  .es   { background-color: #a3e4d7; } /* Environmental Studies */
+  .lunch { background-color: #ff7043; color: white; font-weight: bold; }
+  .free { background-color: #eee; color: #666; font-style: italic; }
+</style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th>Day / Time</th>
+      <th>8:30 - 9:30</th>
+      <th>9:30 - 10:30</th>
+      <th>10:30 - 11:30</th>
+      <th>11:30 - 12:30</th>
+      <th>12:30 - 1:30 (Lunch)</th>
+      <th>1:30 - 2:30</th>
+      <th>2:30 - 3:30</th>
+      <th>3:30 - 4:30</th>
+      <th>4:30 - 5:30</th>
+      <th>5:30 - 6:00</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monday</td>
+      <td class="ds">Data Structures</td>
+      <td class="os">Operating System</td>
+      <td class="web">Web Designing</td>
+      <td class="py">Computing Using Python</td>
+      <td class="lunch" colspan="2">Lunch Break</td>
+      <td class="de">Differential Equation</td>
+      <td class="vm">Vedic Maths</td>
+      <td class="free">Free</td>
+      <td class="free">Free</td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td class="es">Environmental Studies</td>
+      <td class="ds">Data Structures</td>
+      <td class="vm">Vedic Maths</td>
+      <td class="os">Operating System</td>
+      <td class="lunch" colspan="2">Lunch Break</td>
+      <td class="web">Web Designing</td>
+      <td class="py">Computing Using Python</td>
+      <td class="free">Free</td>
+      <td class="free">Free</td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td class="py">Computing Using Python</td>
+      <td class="de">Differential Equation</td>
+      <td class="ds">Data Structures</td>
+      <td class="os">Operating System</td>
+      <td class="lunch" colspan="2">Lunch Break</td>
+      <td class="es">Environmental Studies</td>
+      <td class="vm">Vedic Maths</td>
+      <td class="free">Free</td>
+      <td class="free">Free</td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td class="web">Web Designing</td>
+      <td class="os">Operating System</td>
+      <td class="de">Differential Equation</td>
+      <td class="py">Computing Using Python</td>
+      <td class="lunch" colspan="2">Lunch Break</td>
+      <td class="ds">Data Structures</td>
+      <td class="es">Environmental Studies</td>
+      <td class="free">Free</td>
+      <td class="free">Free</td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td class="vm">Vedic Maths</td>
+      <td class="de">Differential Equation</td>
+      <td class="web">Web Designing</td>
+      <td class="ds">Data Structures</td>
+      <td class="lunch" colspan="2">Lunch Break</td>
+      <td class="os">Operating System</td>
+      <td class="py">Computing Using Python</td>
+      <td class="free">Free</td>
+      <td class="free">Free</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

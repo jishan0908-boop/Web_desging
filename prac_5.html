@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+    <link rel="stylesheet" href="prac_5.css">
+</head>
+
+<body>
+    <header class="form-header">
+        <h1>Admission Form</h1>
+        <h3>Fill in the details below</h3>
+    </header>
+
+    <main>
+        <form action="#" method="post" class="admission-form">
+            
+            <!-- Personal Info -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name:</label>
+                <input id="name" name="name" type="text" placeholder="Enter Your Name" required>
+
+                <label for="mail">Email:</label>
+                <input id="mail" name="email" type="email" placeholder="Enter Your E-Mail" required>
+
+                <label for="pass">Password:</label>
+                <input id="pass" name="password" type="password" placeholder="Create a Password" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input id="dob" name="dob" type="date" required>
+
+                <label for="pn">Phone Number:</label>
+                <input id="pn" name="phone" type="tel" placeholder="Enter Your Phone Number" required>
+
+                <label for="age">Age:</label>
+                <input id="age" name="age" type="number" placeholder="Enter Your Age" min="1" required>
+            </fieldset>
+
+            <!-- Interview Slot -->
+            <fieldset>
+                <legend>Interview Details</legend>
+                <label for="time">Available Interview Time Slot:</label>
+                <input id="time" name="interview_time" type="time" required>
+            </fieldset>
+
+            <!-- Gender -->
+            <fieldset>
+                <legend>Gender</legend>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset>
+
+            <!-- Course Selection -->
+            <fieldset>
+                <legend>Course Selection</legend>
+                <label for="cc">Choose a Course:</label>
+                <select id="cc" name="course" required>
+                    <option value="" disabled selected>Select Course</option>
+                    <option value="B.Voc Software Development">B.Voc Software Development</option>
+                    <option value="B.Voc Banking">B.Voc Banking</option>
+                </select>
+            </fieldset>
+
+            <!-- Terms and Comments -->
+            <fieldset>
+                <legend>Other Information</legend>
+                <label>
+                    <input id="cb" type="checkbox" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
+
+                <label for="ta">Comments (optional):</label>
+                <textarea id="ta" name="comments" rows="4" placeholder="Enter Your Text Here..."></textarea>
+            </fieldset>
+
+            <!-- Buttons -->
+            <div class="form-buttons">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

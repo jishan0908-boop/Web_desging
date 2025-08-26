@@ -1,0 +1,89 @@
+/* Global font and background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header styling */
+h1,
+img {
+    vertical-align: middle;
+}
+
+h1 {
+    color: #222;
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 20px;
+    letter-spacing: 1px;
+}
+
+/* Add slight logo spacing */
+img {
+    margin: 20px 10px;
+    transition: transform 0.3s ease;
+}
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Section headers */
+#first {
+    color: #0056d6;
+    font-weight: bold;
+    border-left: 4px solid #0056d6;
+    padding-left: 8px;
+    margin-top: 20px;
+}
+
+#second {
+    color: #8b4513;
+    font-weight: bold;
+    border-left: 4px solid #8b4513;
+    padding-left: 8px;
+    margin-top: 20px;
+}
+
+/* Paragraphs */
+p {
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 0 20px;
+    color: #333;
+}
+
+/* Ordered list styling */
+ol {
+    max-width: 800px;
+    margin: 10px auto 20px auto;
+    padding-left: 40px;
+}
+ol li {
+    margin: 6px 0;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+ol li:hover {
+    color: #007acc;
+    transform: translateX(5px);
+}
+
+/* Footer */
+footer {
+    color: gray;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    background: #fafafa;
+}
+
+/* Make headings pop a little */
+h3 {
+    font-size: 1.4rem;
+    margin: 20px auto 10px auto;
+    max-width: 900px;
+}
