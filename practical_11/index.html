@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Record Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Student Record</h1>
+
+    <form id="studentForm" novalidate>
+      <div class="row">
+        <label for="fullName">Full name <span class="req">*</span></label>
+        <input id="fullName" name="fullName" type="text" required maxlength="100" />
+      </div>
+
+      <div class="row">
+        <label for="rollNo">Roll number <span class="req">*</span></label>
+        <input id="rollNo" name="rollNo" type="text" inputmode="numeric" required
+               placeholder="e.g. 20231234" maxlength="12" />
+      </div>
+
+      <div class="row">
+        <label for="age">Age <span class="req">*</span></label>
+        <input id="age" name="age" type="number" min="16" max="100" required />
+      </div>
+
+      <div class="row">
+        <label for="email">Email address <span class="req">*</span></label>
+        <input id="email" name="email" type="email" required placeholder="name@example.com" />
+      </div>
+
+      <div class="row">
+        <label for="phone">Phone (10 digits)</label>
+        <input id="phone" name="phone" type="tel" inputmode="tel" maxlength="10" placeholder="0123456789" />
+      </div>
+
+      <div class="row">
+        <label for="course">Course <span class="req">*</span></label>
+        <select id="course" name="course" required>
+          <option value="">-- choose course --</option>
+          <option value="BSc">BSc</option>
+          <option value="BCom">BCom</option>
+          <option value="BA">BA</option>
+          <option value="BTech">BTech</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="year">Year (1 to 4) <span class="req">*</span></label>
+        <input id="year" name="year" type="number" min="1" max="4" required />
+      </div>
+
+      <div class="row">
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+          <option value="">-- prefer not to say --</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="actions">
+        <button type="submit">Save Record</button>
+        <button type="reset" class="secondary">Reset</button>
+      </div>
+
+      <div id="errors" aria-live="polite"></div>
+    </form>
+
+    <section id="result" hidden>
+      <h2>Submitted Data</h2>
+      <pre id="resultData"></pre>
+      <button id="newEntry">Add another</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

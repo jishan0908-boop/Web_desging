@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>BookStore — Login</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container">
+      <div class="brand">BookStore</div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-main">
+    <section class="card" style="max-width:480px;margin:0 auto">
+      <h2>Login</h2>
+      <form id="loginForm" onsubmit="return handleLogin(event)">
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" class="input" type="email" required placeholder="you@example.com"/>
+        </div>
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input id="password" class="input" type="password" minlength="6" required/>
+          <div class="small">Minimum 6 characters</div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button class="btn" type="submit">Sign in</button>
+          <a href="register.html" style="align-self:center">Create account</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container-main">© BookStore</div>
+  </footer>
+
+  <script>
+    function handleLogin(ev){
+      ev.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      alert('Logged in (demo): ' + email);
+      // In real site, you'd POST to server and handle auth.
+      return false;
+    }
+  </script>
+</body>
+</html>

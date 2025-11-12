@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>BookStore — Catalogue</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container">
+      <div class="brand">BookStore</div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-main">
+    <section class="card">
+      <h2>Catalogue</h2>
+      <p>Below is a sample table of books with thumbnails, price, and category.</p>
+
+      <!-- Table: includes images -->
+      <table class="book-table card" style="margin-top:10px">
+        <thead>
+          <tr><th>Book</th><th>Author</th><th>Category</th><th>Price</th><th>Actions</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div style="display:flex;gap:10px;align-items:center">
+                <img class="book-thumb" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=200&auto=format&fit=crop" alt="book1">
+                <div>
+                  <strong>Learning C</strong><div class="small">An intro to C</div>
+                </div>
+              </div>
+            </td>
+            <td>J. Programmer</td>
+            <td>Technology</td>
+            <td>$19.99</td>
+            <td><a class="btn" href="register.html">Buy</a></td>
+          </tr>
+
+          <tr>
+            <td>
+              <div style="display:flex;gap:10px;align-items:center">
+                <img class="book-thumb" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=200&auto=format&fit=crop" alt="book2">
+                <div>
+                  <strong>Fictional Story</strong><div class="small">A short novel</div>
+                </div>
+              </div>
+            </td>
+            <td>A. Storyteller</td>
+            <td>Fiction</td>
+            <td>$12.50</td>
+            <td><a class="btn" href="register.html">Buy</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- A simple unordered list of featured picks -->
+      <h3 style="margin-top:18px">Featured Picks</h3>
+      <ul>
+        <li><strong>AI for Everyone</strong> — Intro to AI concepts.</li>
+        <li><strong>History of Science</strong> — Popular history reads.</li>
+      </ul>
+    </section>
+
+    <section class="card" style="margin-top:12px">
+      <h3>Sample iframe (book preview)</h3>
+      <!-- Iframe (embedding external content) -->
+      <iframe title="Sample preview" src="https://www.example.com/" style="width:100%;height:220px;border:1px solid #eee;border-radius:6px"></iframe>
+      <div class="small" style="margin-top:6px">Note: This iframe points to example.com for demo purposes.</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container-main">© BookStore demo</div>
+  </footer>
+</body>
+</html>

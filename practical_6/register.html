@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>BookStore — Register</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container">
+      <div class="brand">BookStore</div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-main">
+    <section class="card" style="max-width:640px;margin:0 auto">
+      <h2>Create Account</h2>
+      <form id="regForm" onsubmit="return handleRegister(event)">
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" class="input" type="text" required/>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" class="input" type="email" required/>
+        </div>
+
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input id="password" class="input" type="password" minlength="6" required/>
+        </div>
+
+        <div class="form-row">
+          <label for="fav">Favorite category</label>
+          <select id="fav" required>
+            <option value="">Choose...</option>
+            <option>Fiction</option>
+            <option>Technology</option>
+            <option>History</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>Newsletter</label>
+          <label><input type="checkbox" id="news" /> Subscribe to updates</label>
+        </div>
+
+        <div style="display:flex;gap:8px">
+          <button class="btn" type="submit">Register</button>
+          <a href="login.html" style="align-self:center">Already have an account?</a>
+        </div>
+      </form>
+
+      <hr style="margin:16px 0"/>
+
+      <h3>Intro video</h3>
+      <!-- Embedded YouTube video -->
+      <div style="position:relative;padding-top:56.25%;height:0;">
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Intro" style="position:absolute;left:0;top:0;width:100%;height:100%;border:0" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container-main">© BookStore demo</div>
+  </footer>
+
+  <script>
+    function handleRegister(ev){
+      ev.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      alert('Registered (demo): ' + name);
+      return false;
+    }
+  </script>
+</body>
+</html>
